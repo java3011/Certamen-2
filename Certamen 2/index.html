@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Certamen 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Framework de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <!-- Estilos SASS-->
+    <link rel="stylesheet" href="SASS/estilos2.css">
+
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="row">
+            <form id="formulario" method="post" class="row g-3">
+                <div class="col-6">
+                    <!-- Inicio Primera Parte -->
+                    <p><strong>Ficha del Estudiante</strong></p>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="visually-hidden"></label>
+                        <input type="text" class="form-label-plaintext" id="nombre">
+                        <button id="edit" class="ms-5">Editar</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rut" class="col-sm-5 col-form-label"><strong>RUT:</strong></label>
+                        <input type="text" class="form-label-plaintext" id="rut">
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="col-sm-5 col-form-label">Teléfono:</label>
+                        <input type="number" class="form-label-plaintext" id="celular">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="col-sm-5 col-form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-label-plaintext" id="correo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="acudientes" class=" col-sm-5 col-form-label ">Acudientes:</label>
+                        <input type="text " class="form-label-plaintext " id="acud ">
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="fecha " class="col-sm-5 col-form-label ">Fecha Nacimiento:</label>
+                        <input type="text " class="form-label-plaintext " id="fecha ">
+                    </div>
+
+                    <div class="col-auto ">
+                        <label class="col-sm-5 mb-3 col-form-label " for="autoSizingSelect ">Region</label>
+                        <select class="form-label " id="autoSizingSelect ">
+                            <option selected>Valparaiso</option>
+                            <option value="1 ">Atacama</option>
+                            <option value="2 ">Metropolitana</option>
+                            <option value="3 ">Valparaiso</option>
+                        </select>
+                    </div>
+                    <div class="col-auto ">
+                        <label class="col-sm-5 mb-3 col-form-label " for="autoSizingSelect ">Comuna</label>
+                        <select class="form-label " id="autoSizingSelect ">
+                            <option selected>Valparaiso</option>
+                            <option value="1 ">Atacama</option>
+                            <option value="2 ">Santiago</option>
+                            <option value="3 ">Valparaiso</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="direccion " class="col-sm-5 col-form-label ">Direccion:</label>
+                        <input type="text " class="form-label-plaintext " id="direccion">
+                    </div>
+
+                    <button id="act">Actualizar</button>
+                </div>
+                <!-- Fin Primera Parte -->
+
+                <!-- Inicio Segunda Parte -->
+                <div class="col-6 " id="segundo">
+                    <div id="grad">
+                        <label for="grado " class="col-sm col-form-label ">Curso:</label>
+                        <input type="text " class="form-label-plaintext " id="grado ">
+                    </div>
+                    <div class="mt-5 mb-5" id="espacio">
+
+                    </div>
+                    <div class="bd-example" id="tres">
+                        <table class="table table-borderless mb-4">
+                            <thead id="table">
+                                <tr>
+                                    <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                      </svg></th>
+                                    <th scope="col">Aginaturas</th>
+                                    <th scope="col">Objetivos</th>
+                                    <th scope="col">Nota</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>Matemáticas</td>
+                                    <td>Comprensión</td>
+                                    <td>6.0</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                                    </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Física</td>
+                                    <td>Lógica</td>
+                                    <td>7.0</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                                    </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Español</td>
+                                    <td>Gramática</td>
+                                    <td>7.0</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                                    </svg>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div id="caja">
+
+                        <div class="row g-3" id="prin">
+                            <div class="col-sm-5" id="uno">
+                                <input type="text" class="form-control" placeholder="Asignatura" aria-label="Asignatura">
+                            </div>
+                            <div class="col-sm" id="dos">
+                                <div class="col-auto">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect">
+                                      <option selected>Objetivos...</option>
+                                      <option value="1">Comprensión</option>
+                                      <option value="2">Lógica</option>
+                                      <option value="3">Gramática</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 mb-3" id="tres">
+                                <input type="text" class="form-control" placeholder="Nota" aria-label="Nota">
+                            </div>
+                        </div>
+                        <button id="cre">Crear</button>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Fin Segunda Parte -->
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

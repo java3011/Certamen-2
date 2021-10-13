@@ -1,0 +1,46 @@
+body #formulario {
+    #nombre {
+        font-weight: bold;
+    }
+    #edit {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #act {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #segundo {
+        #grad {
+            float: right;
+        }
+        #espacio {
+            padding: 90px;
+        }
+        #tres {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #caja {
+            border: 1px solid #000;
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            #cre {
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
